@@ -1,1 +1,44 @@
-ftgtgtgtgtg
+
+
+A] Etude des données d’une application mobile
+1	identification données locales
+	▪	id ville
+	▪	nom
+	▪	coordonnées géographique
+	▪	la langue
+	▪	choix du format
+
+	identification données distantes
+	•	Températures concernées
+
+2 Stockage de données temporaires:
+
+Stockage de données persistantes:
+     sqlite: Données stockées en BDD (sur root du téléphone) avec des attributs (id-nom-position)
+     SharedPreference: Interface
+Manipulation de fichiers internes
+->opérations (chemin relatifs) sur intense context
+	⁃	FileInputStream openFileInput (String name)
+	⁃	FileOutputStream openFileOutput (String name, int mode)
+	⁃	File getDir(String name, int mode): ouverture (création si nécessaire) d'un répertoire
+	⁃	File deleteFile(String name)
+	⁃	String[] fileList() : liste des fichiers privés
+->Mode de création de fichier et répertoire
+
+- MODE_PRIVATE: accessibilité réservée à l'application (ou d'autres applications avec le même user ID)
+
+- MODE_APPEND: ajout en fin de fichier (par défaut écrasement du fichier)
+
+- MODE_WORLD_{READABLE, WRITABLE}: accessibilité en lecture, écriture pour toutes les applications.
+
+ Manipulation de fichier externes
+Répertoire cache
+
+B] Récupérer les données du serveur
+Voir le dossier td-retrofit
+
+C] Stocker les préférences utilisateurs
+Voir le dossier td-retrofit
+
+
+
