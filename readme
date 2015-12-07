@@ -11,6 +11,20 @@ A] Etude des données d’une application mobile
 	identification données distantes
 	•	Températures concernées
 
+
+
+	correction données en cours
+	par ex: github
+
+	nom
+	prenom
+	date de création
+	taille
+	language
+	description
+	la date du dernier push
+	des statistiques (id to object statistic)
+
 2 Stockage de données temporaires:
 
 Stockage de données persistantes:
@@ -36,6 +50,8 @@ Répertoire cache
 
 B] Récupérer les données du serveur
 Voir le dossier td-retrofit
+
+
 
 C] Stocker les préférences utilisateurs
 Voir le dossier td-retrofit

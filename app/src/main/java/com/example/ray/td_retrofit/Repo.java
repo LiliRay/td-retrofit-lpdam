@@ -6,7 +6,10 @@ import android.widget.Toast;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+
 import java.util.List;
+
+import io.realm.RealmObject;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.GsonConverterFactory;
@@ -21,18 +24,16 @@ import retrofit.http.Path;
  */
 public class Repo {
 
+   @SerializedName("login")
 
-    @SerializedName("login")
-    @Expose
-    private String login;
+   @Expose
+   private String login;
 
-
-        public Repo(String login) {
-            this.login= login;
+    public Repo(String login) {
+        this.login= login;
 
 
     }
-
     public String getLogin() {
         return login;
     }
@@ -40,4 +41,6 @@ public class Repo {
     public void setLogin(String login) {
         this.login = login;
     }
+
+
 }
